@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Like post" />
+
+    <!-- Optimistic UI: cập nhật ngay -->
+    <TextView
+        android:id="@+id/likeStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:text="No action yet"
+        android:background="@drawable/box_border" />
+
+    <!-- Trạng thái sync server -->
+    <TextView
+        android:id="@+id/syncStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Waiting for action..."
+        android:textColor="#666666" />
+
+    <!-- ProgressBar dạng thanh tiến độ -->
+    <ProgressBar
+        android:id="@+id/progressSync"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" />
+
+</LinearLayout>
