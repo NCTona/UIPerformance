@@ -34,7 +34,7 @@
                     android:src="@drawable/ic_launcher_foreground"/>
             </LinearLayout>
 
-            <!-- Text cực nặng -->
+            <!-- Text  -->
             <LinearLayout
                 android:orientation="vertical"
                 android:paddingStart="8dp"

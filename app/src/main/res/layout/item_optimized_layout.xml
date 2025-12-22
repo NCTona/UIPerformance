@@ -29,8 +29,8 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:text="Đây là một đoạn mô tả rất dài, nhiều dòng, giống BAD layout."
-        android:maxLines="2"
+        android:text="Đây là một đoạn mô tả rất dài, nhiều dòng, buộc hệ thống phải đo text nhiều lần khi layout lại, đặc biệt là trong RecyclerView khi scroll nhanh."
+        android:maxLines="4"
         android:ellipsize="end"
         app:layout_constraintStart_toStartOf="@id/txtName"
         app:layout_constraintTop_toBottomOf="@id/txtName"

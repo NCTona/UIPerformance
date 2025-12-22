@@ -26,6 +26,9 @@
             android:name=".perceiveddemo.PerceivedDemoActivity" />
 
         <activity
+            android:name=".openglesdemo.TextureCompareActivity" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
