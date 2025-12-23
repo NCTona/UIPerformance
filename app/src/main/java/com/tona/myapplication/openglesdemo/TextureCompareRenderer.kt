@@ -16,6 +16,8 @@ class TextureCompareRenderer(
 
     var mode = DisplayMode.ORIGINAL
 
+    var drawCount = 250   // có thể set từ Activity (1, 50, 100, 200...)
+
     private var program = 0
     private var rgbaTex = 0
     private var etc1Tex = 0
@@ -127,7 +129,10 @@ class TextureCompareRenderer(
             1
         )
 
-        GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, 6)
+        // ================== DRAW N TIMES ==================
+        for (i in 0 until drawCount) {
+            GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, 6)
+        }
     }
 
     // ================= TEXTURE LOAD =================
